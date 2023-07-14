@@ -1,0 +1,36 @@
+body {
+    background-color: #8E0FF1;
+}
+h1.header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    color: black;
+    text-shadow: 0 1px 3px;
+    margin-bottom: -15px;
+}
+
+h2.header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    font-size:  20px; 
+    text-align: center;
+    color: black;
+    backdrop-filter: blur(5px);
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.form-container {
+    margin-top: 5%;
+    width: 50%;
+    height: 600px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    margin-right: 25%;
+    margin-left: 25%;
+    box-shadow: 10px 10px 5px 2px whitesmoke;
+      
+
+}

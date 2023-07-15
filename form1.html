@@ -5,15 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>signUp</title>
+    <script>
+        function updateFullName() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var fullName = fname + " " + lname;
+            document.getElementById("fullName").textContent = fullName;
+        }
+    </script>
 </head>
 <body>
-    <div >
-        <h1 class="header">INNOVATRIX</h1>
-        <h2 class="header">We invent the future</h2>
+    <div class="header-container" >
+        <h1 class="header1">INNOVATRIX</h1>
+        <h2 class="header2">We invent the future</h2>
     </div>
     <div class="form-container">
         <form action="" method="post">
-            
+            <div class = "header-container">
+                <h1 class="header3">Sign Up</h1>
+                <h2>Join The Team</h2>
+            </div>
+           <div class="left-contents">
+                <h3>Identity Details</h3>
+                <label for="fname">First Name : </label>
+                <input type="text" id="fname" name="fname" oninput="updateFullName()"><br><br>
+
+                <label for="lname">Last Name : </label>
+                <input type="text" id="lname" name="lname" oninput="updateFullName()"><br><br>
+
+                <label for="fullName">Full Name   : </label>
+                <input type="text" id="fullName" readonly><br><br>
+
+                <h3>Contact Details</h3>
+                <label for="phone">Phone Number : </label>
+                <input type="text" id="phone" name="phone"><br><br>
+
+                <label for="email">Email : </label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="website">website Link : </label>
+                <input type="text" id="website" name="website"><br><br>
+           </div>
+           <div class="right-contents">
+                <h3>Proof Of Work</h3>
+                <label for="github">Github : </label>
+                <input type="text" id="github" name="github"><br><br>
+
+                <label for="linkedin">Linkedin : </label>
+                <input type="text" id="linkedin" name="linkedin"><br><br>
+
+                <label for="twitter">Twitter : </label>
+                <input type="text" id="twitter" name="twitter"><br><br>
+
+                <h3>Skills/Expertism</h3>
+                <div class="radio-container">
+                    <input type="radio" id="html" name="skills" value="HTML">
+                    <label for="html">Front End</label><br>
+                    <input type="radio" id="python" name="skills" value="PYTHON">
+                    <label for="python">Back End</label><br>
+                    <input type="radio" id="javascript" name="skills" value="JAVASCRIPT">
+                    <label for="javascript">Full Stack</label><br>
+                    <input type="radio" id="sql" name="skills" value="SQL">
+                    <label for="sql">Database</label><br>
+                    <input type="radio" id="figma" name="skills" value="FIGMA">
+                    <label for="figma">UI/UX</label><br>
+                </div>
+           </div>
+           <button>Submit</button>
         </form>
     </div>
 </body>
